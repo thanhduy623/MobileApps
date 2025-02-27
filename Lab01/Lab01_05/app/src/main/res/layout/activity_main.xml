@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Android RadioButtons"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Danh sách RadioButton -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select an option"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"/>
+
+        <RadioButton
+            android:id="@+id/radioIOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iOS"/>
+
+        <RadioButton
+            android:id="@+id/radioWindows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows"/>
+
+        <RadioButton
+            android:id="@+id/radioRIM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RIM"/>
+    </RadioGroup>
+
+    <!-- Nút xem kết quả -->
+    <Button
+        android:id="@+id/btnShowResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:text="Click here to see Results"
+        android:textColor="@android:color/white"
+        android:padding="8dp"/>
+
+    <!-- Kết quả hiển thị -->
+    <TextView
+        android:id="@+id/txtResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:text="You selected: "
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

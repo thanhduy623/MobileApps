@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- Nút TOAST -->
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/cardview_dark_background"
+        android:contentDescription="Nhấn để hiển thị thông báo"
+        android:text="TOAST"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ô nhập số (Chỉ đọc, mặc định 0, chiếm toàn bộ khoảng trống) -->
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFEB3B"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:inputType="none"
+        android:text="0"
+        android:textColor="#673AB7"
+        android:textSize="120dp"
+        app:layout_constraintBottom_toTopOf="@id/button_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_toast" />
+
+    <!-- Nút COUNT -->
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/cardview_dark_background"
+        android:contentDescription="Nhấn để đếm số"
+        android:text="COUNT"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
